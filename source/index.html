@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,22 +9,22 @@
 <body class="page__body">
   <header class="header">
     <div class="container">
-      <a class="logo__link">
-        <img class="logo__img" src="img/logo-header.svg" width="250" height="38" alt="Логотип Кэт 
+      <a class="header-logo logo">
+        <img src="img/logo-header.svg" width="250" height="38" alt="Логотип Кэт 
         энерджи">
       </a>
-      <nav class="header-navigation">
-        <button class="header-navigation__toggle" type="button"><span class="visually-hidden">Открыть
+      <nav class="header__navigation navigation">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
-        <ul class="header-navigation__list">
-          <li class="header-navigation__item">
-            <a class="header-navigation__link header-navigation__link--active">Главная</a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active">Главная</a>
           </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="catalog.html">Каталог продукции</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="form.html">Подбор программы</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -38,7 +38,7 @@
         <picture>
           <img src="img/nutrition-mobile.png" width="280" height="270" alt="Курица">
         </picture>
-        <a class="button" href="form.html">Подобрать программу</a>
+        <a class="nutrition-program__select button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="selection-program">
@@ -123,29 +123,31 @@
             <span>затраты на питание:</span>
             <span>15 000 руб.</span>
           </p>
-        <div class="slider">
-          <div class="slider__images">
-            <picture><img src="img/before-mobile.jpg" width="251" height="240" alt="до программы"></picture>
-            <picture><img src="img/after.png" width="251" height="240" alt="после программы"></picture>
-          </div>
-          <div class="slider__toggles">
-            <button class="slider__toggles-button slider__toggles-button--before" type="button">Было</button>
-            <div class="slider__scale">
-              <button type="button" class="slider__bar"></button>
+          <div class="slider">
+            <div class="slider__images">
+              <picture><img src="img/before-mobile.jpg" width="251" height="240" alt="до программы"></picture>
+              <picture><img src="img/after.png" width="251" height="240" alt="после программы"></picture>
             </div>
-            <button class="slider__toggles-button slider__toggles-button--after" type="button">Стало</button>
+            <div class="slider__toggles">
+              <button class="slider__toggles-button slider__toggles-button--before" type="button">Было</button>
+              <div class="slider__scale">
+                <button type="button" class="slider__bar"></button>
+              </div>
+              <button class="slider__toggles-button slider__toggles-button--after" type="button">Стало</button>
+            </div>
           </div>
         </div>
-      </div>
     </section>
   </main>
   <footer class="footer">
-    <section class="footer__contacts">
+    <section class="footer__contacts contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="footer__contacts-address">
-        <h3>Приглашаем к сотрудничеству дилеров!</h3>
-        <address> ул. Б. Конюшенная, д. 19/8</address>
-        <span>Санкт-Петербург</span>
+      <div class="contacts__address">
+        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+        <address class="contacts__text">
+          ул. Б. Конюшенная, д. 19/8<br>
+          <span>Санкт-Петербург</span>
+        </address>
       </div>
       <div class="footer__iframe">
         <iframe class="footer__iframe-map"
@@ -157,7 +159,7 @@
         <a class="footer__logo">
           <img src="img/footer-logo.png" width="128" height="24" alt="Магазин здоровой еды для котиков">
         </a>
-        <div class="page-footer__social social">
+        <div class="ooter__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vk" href="#" aria-label="Переход на сайт vk">
