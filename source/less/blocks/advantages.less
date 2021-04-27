@@ -1,33 +1,38 @@
-.advantages__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 23px;
+.advantages {
+  padding-top: 18px;
+  padding-bottom: 22px;
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+  }
 
   &__title {
-    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-family: @deafult-font;
     font-size: 36px;
-    line-height: 50px;
-    color: #111111;
+    line-height: 40px;
+    color: @black;
     font-weight: 400;
     margin: 0 0 35px;
   }
 
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   &__text {
-    font-family: "Arial", sans-serif;
+    font-family: @deafult-font2;
     font-size: 14px;
     line-height: 18px;
-    color: #444444;
+    color: @black--lighten;
     margin: 0;
   }
 
-  .advantages__item {
-    display: flex;
-    align-items: center;
-  }
-
-  .advantages__illustration {
+  &__illustration {
     margin-right: 20px;
   }
 }
-

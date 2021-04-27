@@ -1,13 +1,7 @@
-.header {
-  height: 4.125rem;
-  font-family: "Oswald", sans-serif;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-
+/*.header {
   &__image {
-    padding-top: 8px;
+    padding-top: 5px;
+    margin-right: 80px;
   }
 
   &--preview::after {
@@ -23,19 +17,61 @@
     z-index: -1;
   }
 
-  &__container--small {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-  &__wrap {
+  &__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
+*/
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 
+  &--preview::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 135px;
+    min-height: 306px;
+    width: 100%;
+    background-image: url("../../img/background-img.jpg");
+    background-color: @green;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &__container {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-image {
+    padding-top: 5px;
+  }
+
+  &__logo-text {
+    padding-top: 10px;
+  }
+}
