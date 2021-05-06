@@ -1,0 +1,25 @@
+.social {
+  padding: 24px 0 15px;
+  border-top: 1px solid @grey--verylight;
+  border-bottom: 1px solid @grey--verylight;
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 130px;
+    margin: 0 auto;
+  }
+
+  &__link:focus,
+  &__link:hover {
+    fill: @green;
+  }
+
+  &__link:active {
+    fill: @green;
+    opacity: 0.3;
+  }
+}

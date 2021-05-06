@@ -1,77 +1,81 @@
-/*.header {
-  &__image {
-    padding-top: 5px;
-    margin-right: 80px;
-  }
 
-  &--preview::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    min-height: 306px;
-    width: 100%;
-    background-image: url("/source/img/index-background-desktop@1x.jpg");
-    background-color: @basic_green;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  &__logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-*/
 .header {
   position: relative;
   display: flex;
   flex-direction: column;
 
-  &--preview::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 135px;
-    min-height: 306px;
-    width: 100%;
-    background-image: url("../../img/background-img.jpg");
-    background-color: @green;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-
   &__container {
     height: 65px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   &__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 
   &__logo-image {
     padding-top: 5px;
+    &:focus,
+    &:hover {
+      opacity: 0.7;
+   }
+    &:active {
+      opacity: 0.3;
+   }
   }
 
   &__logo-text {
     padding-top: 10px;
   }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__toggle {
+    width: 24px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__toggle-icon {
+    margin: 0 auto;
+  }
+
+  &__toggle-icon--close {
+    display: block;
+  }
+
+  &__toggle-icon--open {
+    display: none;
+  }
+
+  &__wrapper--show &__toggle-icon--close {
+    display: none;
+  }
+
+  &__wrapper--show &__toggle-icon--open {
+    display: block;
+  }
+
+  &__wrapper--show .navigation {
+    height: 199px;
+    opacity: 1;
+    transition: height 0.5s, opacity 1s;
+  }
+
+  &__wrapper--show .navigation__item {
+    display: block;
+  }
 }
+

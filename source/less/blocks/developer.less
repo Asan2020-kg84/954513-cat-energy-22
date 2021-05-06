@@ -1,0 +1,37 @@
+.developer {
+  padding-top: 14px;
+  padding-bottom: 22px;
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__title {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: @black--lighten;
+  }
+
+  &__title:active {
+    opacity: 0.3;
+  }
+
+  &__logo {
+    fill: @grey--dark;
+  }
+
+  &__logo:focus,
+  &__logo:hover {
+    fill: @green;
+  }
+
+  &__logo:active {
+    fill: @green;
+    opacity: 0.3;
+  }
+}
