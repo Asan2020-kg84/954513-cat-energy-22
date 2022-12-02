@@ -1,0 +1,72 @@
+.page {
+  &__body {
+    font-family: roboto;
+  }
+}
+
+.header {
+  padding: 17px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav__list {
+  display: flex;
+}
+
+.header-nav__item {
+  margin-right: 45px;
+}
+
+.header-nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.header__buttons {
+  display: flex;
+}
+
+.button-icon {
+  margin-right: 12px;
+}
+
+.button-measure {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #EF7F04;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: white;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.button-calculation {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #3B3A63;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: white;
+}
